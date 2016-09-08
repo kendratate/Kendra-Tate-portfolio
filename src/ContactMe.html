@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/form.css" >
+    <script src="../lib/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+    <form name="inputform" action="formprocess.php" method="post">
+        <div id="contactheader">Contact Me</div>
+        <span class="displayinline">
+            <div id="firsterror">Firstname must be present and only letters</div>
+            <label for="firstname">First Name: </label><input id="firstname" onkeydown="javascript: checkfirst()" onmousedown="javascript: checkfirst()" name="first">
+            <label for="lastname">Last Name: </label><input id="lastname" name="last" pattern=".{1,}">
+        </span>
+        <span class="displayblock">
+            <label for="address">Address: </label>
+            <textarea class="displayinline" cols="60"rows="1" id="address" name="addr"></textarea>
+        </span>
+        <span class="displayinline">
+            <label for="city">City: </label><input type="text" placeholder="City" id="city" name="city" pattern="[a-zA-Z]{2,30}">
+            <label for="state">State: </label><input type="text" id="state" name="state">
+            <label for="state">Zip: </label><input type="text" id="zip" name="zip">
+        </span>
+        <span class="displayblock">
+            <label>What can I help you with? </label><br><textarea name="interest" cols="100" rows="15"></textarea>
+        </span>
+
+        <div>
+            <input class="displayinline" type="reset" value="Reset Form">
+            <input class="displayinline" type="submit" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+
+<script>
+    function checkfirst(){
+        var patt = new RegExp("[A-Za-z]+");
+        var varfirst = document.getElementById("firstname").value;
+        console.log(varfirst);
+        if (patt.test(varfirst) == false || firstname == null || firstname == ""){
+            console.log("hello from checkfirst");
+            document.getElementById("firstname").style.border="5px red solid";
+            document.getElementById("firsterror").style.visibility="visible";
+        }
+
+    }
+</script>
+</html>
