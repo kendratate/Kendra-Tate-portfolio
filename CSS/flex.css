@@ -1,0 +1,15 @@
+.flex-container{
+    padding:0;
+    margin:30px;
+    display:flex;
+    flex-wrap:wrap;
+    background: url("../images/swirl_pattern.png") repeat center center fixed;
+    height: 90%;
+    justify-content:center;
+    align-items:baseline;
+}
+
+.flex-item{
+    background-color:wheat;
+    margin:10px;
+}

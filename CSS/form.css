@@ -1,5 +1,9 @@
+body{
+    background-image: url("../images/swirl_pattern.png")
+}
+
 form{
-    border: 10px double darkgrey;
+    background-position: center;
     background-color: lightgrey;
     width: 660px;
 }
@@ -56,3 +60,7 @@ input:valid{
     color: red;
 }
 
+#formdiv{
+
+    margin:0 auto;
+}

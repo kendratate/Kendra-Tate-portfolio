@@ -1,0 +1,98 @@
+@font-face{
+    font-family:heart;
+    src: url('../src/Always In My Heart.ttf');
+
+}
+
+html, body{
+    margin:0;
+    padding: 0;
+    color: #FFFFFF;
+    height: 100%;
+}
+
+h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    background: url("../images/autumn-leaves.jpg") no-repeat center center fixed;
+    /* top, left, bottom, right only applies if position is set */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    /* top/bottom, left/right */
+    background-position: 50% 50%;
+    margin: 0 auto;
+    /*older web-kit reuqirement*/
+    position:relative;
+    clear:both;
+}
+
+.centerbox{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: "heart", Helvetica, sans-serif;
+    font-size: 60px;
+    overflow:hidden;
+}
+
+.logo{
+    float:left;
+}
+
+.nav{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.nav a{
+    color: #FFFFFF;
+    text-decoration:none;
+    padding: 5px;
+
+}
+
+.rightsection{
+    float:right;
+    padding-top:300px;
+    padding-right:200px;
+    font-size: 60px;
+}
+
+.footer{
+    width:100%;
+    background-color: #000000;
+    opacity: .5;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    float:right;
+    height: 40px;
+}
+
+#tagline{
+    float:right;
+    margin-right: 15px;
+    opacity: .7;
+    font-size: 30px;
+    font-family: "heart", Helvetica, sans-serif;
+}
+
