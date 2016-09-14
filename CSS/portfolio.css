@@ -4,10 +4,18 @@
 
 }
 
-body{
-    height:100%;
-    margin:0;
-    padding:0;
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: lightgray;
+    font-family: heart, Helvetica, sans-serif;
+}
+
+#container{
+    height: 100%;
+    background-color: black;
+    background-size: cover;
 }
 
 h5{
@@ -27,24 +35,17 @@ head{
     align-self: center;
 }
 
-.groove img:hover{
-    border-color:#000000;
-}
-
 .groove img{
-    border-style: groove;
-    border-width: 20px;
-    border-color: #3a3a3a;
     width:100%;
 }
 
 .hero{
-    font-family:"heart", Helvetica, sans-serif;
     font-size: 70pt;
     background-color: #575c67;
     text-align:center;
     padding: 20px;
 }
+
 
 .groove{
     float:left;
@@ -139,29 +140,40 @@ head{
 
 /* Animate frame */
 #myAnimateBackground {
-    background: #575c67;
-    -webkit-animation: mymove 2s; /* Chrome, Safari, Opera */
-    -webkit-animation-iteration-count: 3;
-    animation: mymove 2s;
-    animation-iteration-count: 3;
+    position:absolute;
+    font-size: 3w;
+    right: 40%;
+    top: 50%;
+    animation: spin 3s, mymove 3s ease;
+    /*transition: all 3s ease;*/
+    animation-fill-mode: forwards;
+    color:white;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    0%, 100%{
-        background-color: #000000;
-    }
-    50% {
-        background-color: #575c67;
-    }
+.navslide:hover{
+    background: blue;
+    width: 200px;
+    border-radius:3px;
 }
 
-/* Standard syntax */
+#myAnimateBackground:hover {
+    transform: rotate(360deg) scale(2,2);
+}
+
 @keyframes mymove {
     from {
-        background-color: #000000;
+        background-color: #FFFFFF;
     }
     to {
-        background-color: #575c67;
+        background-color: #000000;
     }
+}
+
+
+/* Standard syntax */
+@keyframes spin {
+     100% {
+
+         transform: rotate(360deg) scale(2, 2);
+     }
 }
