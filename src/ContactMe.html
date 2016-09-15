@@ -4,36 +4,69 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="../CSS/form.css" >
-    <script src="jquery-3.1.0.min.js"></script>
+
+    <!--Include Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 </head>
 <body>
-    <div id="formdiv">
-        <form>
-            <div id="contactheader">Contact Me</div>
-                <span class="displayinline">
-                    <span id="firsterror">Firstname must be present and only letters</span>
-                    <label for="firstname">First Name: </label><input id="firstname" onkeydown="javascript: checkfirst()" onmousedown="checkfirst()" name="first">
-                    <label for="lastname">Last Name: </label><input id="lastname" name="last">
-                </span>
-                <span class="displayblock">
-                    <label for="address">Address: </label>
-                    <textarea class="displayinline" cols="60" rows="1" id="address" name="addr"></textarea>
-                </span>
-                <span class="displayinline">
-                    <label for="city">City: </label><input type="text" placeholder="City" id="city" name="city">
-                    <label for="state">State: </label><input type="text" id="state" name="state">
-                    <label for="zip">Zip: </label><input type="text" id="zip" name="zip">
-                </span>
-                <span class="displayblock">
-                    <label for="help">What can I help you with? </label><br><textarea id="help" name="interest" cols="100" rows="15"></textarea>
-                </span>
+    <!--<div id="formdiv">-->
+        <!--<form>-->
+            <!--<div id="contactheader">Contact Me</div>-->
+                <!--<span class="displayinline">-->
+                    <!--<span id="firsterror">Firstname must be present and only letters</span>-->
+                    <!--<label for="firstname">First Name: </label><input id="firstname" onkeydown="javascript: checkfirst()" onmousedown="checkfirst()" name="first">-->
+                    <!--<label for="lastname">Last Name: </label><input id="lastname" name="last">-->
+                <!--</span>-->
+                <!--<span class="displayblock">-->
+                    <!--<label for="address">Address: </label>-->
+                    <!--<textarea class="displayinline" cols="60" rows="1" id="address" name="addr"></textarea>-->
+                <!--</span>-->
+                <!--<span class="displayinline">-->
+                    <!--<label for="city">City: </label><input type="text" placeholder="City" id="city" name="city">-->
+                    <!--<label for="state">State: </label><input type="text" id="state" name="state">-->
+                    <!--<label for="zip">Zip: </label><input type="text" id="zip" name="zip">-->
+                <!--</span>-->
+                <!--<span class="displayblock">-->
+                    <!--<label for="help">What can I help you with? </label><br><textarea id="help" name="interest" cols="100" rows="15"></textarea>-->
+                <!--</span>-->
 
-                <div>
-                    <input class="displayinline" type="reset" value="Reset Form">
-                    <input class="displayinline" type="submit" value="Submit">
-                </div>
+                <!--<div>-->
+                    <!--<input class="displayinline" type="reset" value="Reset Form">-->
+                    <!--<input class="displayinline" type="submit" value="Submit">-->
+                <!--</div>-->
+        <!--</form>-->
+    <!--</div>-->
+
+    <div class="container-fluid contactme">
+        <form>
+            <div class="form-group">
+                <label for="firstname">First Name: </label><input id="firstname" onkeydown="javascript: checkfirst()" onmousedown="checkfirst()" name="first">
+                <label for="lastname">Last Name: </label><input id="lastname" name="last">
+            </div>
+            <div class="form-group">
+                <label for="address">Address: </label>
+                <textarea class="displayinline" cols="60" rows="1" id="address" name="addr"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Submit file such as design documents or requirements here.</p>
+            </div>
+            <div class="form-group">
+                <label for="help">What can I help you with? </label><br><textarea id="help" name="interest" cols="100" rows="15"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
-    </div>
+     </div>
+    <script src="jquery-3.1.0.min.js"></script>
 </body>
 
 <script>
