@@ -65,10 +65,6 @@ head{
     border:3px solid #021a40;
 }
 
-.align-right{
-    align:right;
-}
-
 .width-100{
     width:100%;
 }
@@ -141,7 +137,6 @@ head{
 /* Animate frame */
 #myAnimateBackground {
     position:absolute;
-    font-size: 25w;
     right: 40%;
     top: 50%;
     animation: spin 3s, mymove 3s ease;
@@ -152,7 +147,7 @@ head{
 
 .navslide {
     background: red;
-    height: 20px;
+    height: 30px;
     margin: 10px;
 }
 
@@ -160,9 +155,9 @@ head{
     width: 80%;
     position: fixed;
     bottom: 30px;
-    border-radius:none !important;
-    padding-left:0px;
-    padding-right:0px;
+    border-radius:inherit;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navslide:hover{
@@ -172,14 +167,23 @@ head{
     animation: slide 1s;
 }
 
+
 .navslide img{
     width: 100%;
     height: 100%;
 }
 
-$(".navslide").hover(function(){
-    $(".navslide").slideUp();
-});
+.linktext {
+    margin: auto 0;
+    display: inline;
+}
+
+#formbox{
+    font-family:"Arial Rounded MT Bold";
+    margin: auto;
+    background-color: #9d9d9d;
+
+}
 
 
 #myAnimateBackground:hover {
@@ -212,4 +216,6 @@ $(".navslide").hover(function(){
         height: 400px;
     }
 }
+
+
 
