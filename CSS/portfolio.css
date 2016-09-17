@@ -5,11 +5,12 @@
 }
 
 body, html{
+    font-family: heart, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: lightgray;
-    font-family: heart, Helvetica, sans-serif;
+    background-size: cover;
+    background: url("../images/portfolio-background.jpg") no-repeat center center fixed;
 }
 
 #container{
@@ -18,21 +19,14 @@ body, html{
     background-size: cover;
 }
 
-h5{
-    color: cornflowerblue;
-    background: bisque;
-}
-
-html{
-    background: url("../images/back.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 head{
     align-self: center;
+}
+
+.groove{
+    float:left;
+    padding:40px;
 }
 
 .groove img{
@@ -47,11 +41,6 @@ head{
 }
 
 
-.groove{
-    float:left;
-    padding:40px;
-}
-
 .links{
     float:left;
     font-family: 'heart', Helvetica, sans-serif;
@@ -65,13 +54,6 @@ head{
     border:3px solid #021a40;
 }
 
-.width-100{
-    width:100%;
-}
-
-.margin-auto{
-    margin:auto;
-}
 
 .text-align-center{
     text-align:center;
@@ -98,28 +80,7 @@ head{
 #titleDiv{
     position: fixed;
     color: rgb(0, 0, 255);
-
-
 }
-
-#sidebar{
-    width: 30%;
-    height: 100%;
-    display: block;
-    float: left;
-    background-color:#FFFFFF;
-}
-
-#portfoliotitle{
-
-}
-
-/* CSS - Cascading Style Sheet */
-/* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=13M0u0kocx4enLUjKDiupuUvinp */
-
-/* Feel free to copy&paste color codes to your application */
-
 
 /* As hex codes */
 
@@ -136,41 +97,59 @@ head{
 
 /* Animate frame */
 #myAnimateBackground {
-    position:absolute;
-    right: 40%;
-    top: 50%;
+    position: fixed;
     animation: spin 3s, mymove 3s ease;
-    /*transition: all 3s ease;*/
     animation-fill-mode: forwards;
-    color:white;
+    font-size: 4.0vw;
+    opacity: .5;
+    padding: 20px;
+    color: steelblue;
+    width: 80%;
+    top: 50%;
 }
 
 .navslide {
-    background: red;
-    height: 30px;
+    background: black;
+    height: 50px;
     margin: 10px;
+    position:relative;
 }
 
 #navbox{
-    width: 80%;
     position: fixed;
-    bottom: 30px;
-    border-radius:inherit;
-    padding-left: 0;
-    padding-right: 0;
+    bottom: 0;
+    width: 100%
 }
 
 .navslide:hover{
-    background: blue;
+    background: darkgoldenrod;
     height: 400px;
     border-radius: 3px;
-    animation: slide 1s;
+    animation: slideUp 2s, opacity 4s;
 }
 
 
 .navslide img{
     width: 100%;
     height: 100%;
+    opacity: .2;
+}
+
+.navslide h2{
+    position:absolute;
+    margin: 0;
+    color: lightgrey;
+    top: 0;
+}
+
+.navslide > img[alt] {
+    color:white;
+    margin: auto 0;
+}
+
+h2 span{
+    color: white;
+    padding: 10px;
 }
 
 .linktext {
@@ -199,6 +178,11 @@ head{
     }
 }
 
+@keyframes opacity{
+    100% {
+        opacity: 1;
+    }
+}
 
 /* Standard syntax */
 @keyframes spin {
