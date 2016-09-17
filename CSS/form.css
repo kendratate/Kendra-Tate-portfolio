@@ -1,70 +1,24 @@
-body{
-    background-image: url("../images/swirl_pattern.png")
-}
 
 form{
     background-position: center;
     background-color: lightgrey;
     width: 660px;
+    font-family: "Arial Rounded MT Bold"
 }
 
-input{
-    padding: 5px;
-}
-
-span{
-    padding: 10px;
-}
-
-label{
-    padding:10px;
-}
-
-form textarea{
-    display:block;
-    border: dashed dimgray;
-}
 
 input:invalid{
     border:2px solid red;
 }
-input:valid{
-    border:2px dashed;
-}
 
 
-.displayinline{
-    display:inline;
-    padding:15px;
-}
 
-.displayblock{
-    display:block;
-    padding:15px;
-}
-
-.displayright{
-    float:right;
-}
-
-
-#contactheader{
-    background-color: #575c67;
-    font-size: x-large;
-    text-align:center;
-    padding:5px;
-}
 
 #firsterror{
     visibility:hidden;
     color: red;
 }
 
-#formdiv{
 
-    margin:0 auto;
-}
 
-.contactme{
 
-}
