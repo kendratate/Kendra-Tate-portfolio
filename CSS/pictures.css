@@ -19,9 +19,21 @@
 .rotate {
     transform: rotate(90deg);
     height: auto;
-    margin-bottom: 100px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.rotateModalContent {
+    transform: rotate(90deg);
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 20px auto 200px auto;
 }
 
 img {

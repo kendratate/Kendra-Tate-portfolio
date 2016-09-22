@@ -3,9 +3,19 @@ form{
     background-position: center;
     background-color: lightgrey;
     width: 660px;
-    font-family: "Arial Rounded MT Bold"
+    font-family: "Arial Rounded MT Bold";
+    padding: 10px;
+    margin-top: 50px;
 }
 
+#submit-button{
+    border: black;
+    border-width: thin;
+    color: wheat;
+    background-color: slategray;
+    color: aliceblue;
+    margin-top: 20px;
+}
 
 input:invalid{
     border:2px solid red;

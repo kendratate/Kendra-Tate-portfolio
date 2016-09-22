@@ -18,7 +18,7 @@
         </div>
         <div class="row">
             <img id="3" class="col-sm-4 img-resposive center-block" src="../images/dropbox/Minnie.jpg "alt="Nevaeh and Kayzlee at Disneyland" onclick="photoinfo(this)">
-            <img id="4" class="rotate col-sm-4 img-resposive center-block " src="../images/dropbox/RobDisney.jpg" alt="5" onclick="photoinfo(this)" width="200" height="200">
+            <img id="4" class="rotate col-sm-4 img-resposive center-block " src="../images/dropbox/RobDisney.jpg" alt="My husband Rob" onclick="photoinfo(this)" width="200" height="200">
             <img id="5" class="col-sm-4 img-resposive center-block" src="../images/dropbox/SirensSanFran.jpg" alt="Kaisha with her tour group" onclick="photoinfo(this)">
         </div>
         <div class="row">
@@ -50,6 +50,11 @@
             modalImg.src = element.src;
             captionText.innerHTML = element.alt;
             element.className += " visited";
+
+            // pass rotate class to modal window if present
+            if (element.classList.contains("rotate")){
+                modalImg.className = "rotateModalContent";
+            }
         }
 
         // Get the <span> element that closes the modal
