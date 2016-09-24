@@ -1,1 +1,1 @@
-Portfolio.html is the main page to start from.
+src/Portfolio.html is the main page to start from.
