@@ -1,0 +1,13 @@
+@font-face{
+    font-family:heart;
+    src: url('../src/Always In My Heart.ttf');
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin:auto;
+}
+
+.carousel-caption > h4 {
+    color: steelblue;
+}
+

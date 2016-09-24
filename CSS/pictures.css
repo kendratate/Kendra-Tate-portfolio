@@ -45,7 +45,7 @@ img {
     box-shadow: 10px 10px 37px -6px rgba(0,0,0,0.75);
 }
 
-img.img-thumbnail:hover{opacity: 0.5;}
+.container img:hover{opacity: 0.5;}
 
 img.visited {opacity: 0.3;}
 

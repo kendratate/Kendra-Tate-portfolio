@@ -1,7 +1,6 @@
 @font-face{
     font-family:heart;
     src: url('../src/Always In My Heart.ttf');
-
 }
 
 body, html{
@@ -151,7 +150,7 @@ head{
 
 .navslide:hover{
     background: darkslateblue;
-    height: 300px;
+    height: 400px;
     border-radius: 3px;
     animation: slide 2s;
     animation-fill-mode: forwards;
@@ -192,7 +191,6 @@ h2 span{
     font-family:"Arial Rounded MT Bold";
     margin: auto;
     background-color: #9d9d9d;
-
 }
 
 
@@ -236,6 +234,13 @@ h2 span{
     100%{
         visibility: visible;
     }
+}
+
+#navbar-brand{
+    font-family: heart, Helvetica, sans-serif;
+    color: steelblue;
+    font-size: 50px;
+    margin-top: 20px;
 }
 
 

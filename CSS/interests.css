@@ -11,13 +11,12 @@ html, body{
     height: 100%;
 }
 
-h2{
-    font-size: 40px;
-    margin: 0;
+.rightsection h2{
+    font-size: 1em;
 }
 
-p{
-    font-size: 20px;
+.rightsection p{
+    font-size: .7em;
 }
 
 #container{
@@ -41,6 +40,8 @@ p{
 .centerbox{
     width: 90%;
     margin: 0 auto;
+    position: relative;
+    height: 100%;
 }
 
 .header{
@@ -72,9 +73,11 @@ p{
 
 .rightsection{
     float:right;
-    padding-top:300px;
-    padding-right:200px;
+    padding-top: 300px;
+    padding-right: 300px;
     font-size: 60px;
+    z-index: 1000;
+    position: relative;
 }
 
 .footer{
@@ -92,7 +95,44 @@ p{
     float:right;
     margin-right: 15px;
     opacity: .7;
-    font-size: 30px;
-    font-family: "heart", Helvetica, sans-serif;
+}
+
+#bridges{
+    transform: rotate(100deg);
+    width: 40%;
+    position: absolute;
+    top: 20%;
+
+}
+
+#travel{
+    position: absolute;
+    top: 60%;
+    width: 40%;
+    transform: rotate(-20deg);
+}
+
+#parkcity{
+    position: absolute;
+    width: 40%;
+    right: 25%;
+    top: 60%;
+    transform: rotate(95deg);
+}
+
+#boxers{
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    transform: rotate(20deg);
+    right: 0;
+}
+
+#disney{
+    position: absolute;
+    width: 40%;
+    top: 15%;
+    right: 5%;
+    transform: rotate(-10deg);
 }
 
