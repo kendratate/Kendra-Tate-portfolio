@@ -8,6 +8,8 @@
 }
 
 .carousel-caption > h4 {
-    color: steelblue;
+    color: rgb(19, 16, 16);
+    font-style: italic;
+    font-size: larger;
 }
 
